@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities | Digital Privacy & Security</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #quizContainer, #scenarioContainer {
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        h4 {
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        label {
+            display: block;
+            margin: 5px 0;
+        }
+
+        input[type="text"],textarea{
+            width: calc(100% - 20px);
+            max-width: 400px;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            display: block;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .quiz-title, .scenario-title {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <marquee behavior="alternate" scrollamount="3">
+            <h1>Interactive Activities</h1>
+        </marquee>
+    </header>
+    <marquee direction="left" scrollamount="3" behavior="scroll">
+        <p>Engage with our interactive activities to enhance your knowledge of digital privacy and security!</p>
+    </marquee>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="threats.html">Threats</a></li>
+            <li><a href="best-practices.html">Best Practices</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="activities.html">Activities</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Explore Our Activities</h2>
+        
+        <section id="quiz">
+            <h3>Quiz Your Knowledge</h3>
+            <p>Challenge yourself with our interactive quiz! Test your understanding of digital privacy and security concepts, and discover areas for improvement. Are you ready to see how much you really know?</p>
+            <button onclick="startQuiz()">Start Quiz</button>
+            <div id="quizContainer">
+                <!-- Quiz content will be dynamically generated here -->
+            </div>
+        </section>
+        <br>
+        <section id="scenario">
+            <h3>Scenario-Based Learning</h3>
+            <p>Engage with real-world scenarios to test your knowledge. Make decisions based on various situations to enhance your critical thinking and decision-making skills. Can you navigate the complexities of digital security?</p>
+            <button onclick="startScenario()">Start Scenarios</button>
+            <div id="scenarioContainer">
+                <!-- Scenario content will be dynamically generated here -->
+            </div>
+        </section>
+        <br>
+        <section id="feedback">
+            <h3>Feedback Form</h3>
+            <p>We value your feedback! Please share your thoughts with us to help us improve our activities.</p>
+            <form id="feedbackForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+            <div id="feedbackResult"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Digital Privacy & Security. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
